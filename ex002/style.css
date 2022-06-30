@@ -1,0 +1,47 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'blackside' ;
+    src: url('Blackside.ttf') format(
+        'truetype');
+        font-weight: normal;
+        font-style: normal; 
+
+    /* 
+        tipos de formatos
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (appel advanced Typography)
+         - svg
+    */
+}        
+* {/* Configuracoes globais da Css */
+  font-family: 'Times New Roman', Times, serif;  
+ }
+ body{
+     background-image: linear-gradient(to right, #188C77,#D517DB,#0FD9B3);
+     background-attachment: fixed;
+ }
+
+ main {
+    border-radius: 10px;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+
+ }
+ h1 {
+
+    /* short-hand font 
+    - font-style -> font-wight -> font-size -> font-family*/
+    font: bolder 4em 'blackside', sans-serif;
+ }
+ h2{
+    font: bold 2em 'work sans';
+ }
+
+ p{
+
+    text-align: justify;
+    text-indent: 10px;
+ }
