@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela area</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        } 
+        td, th {
+            border: 1px solid darkgray;
+            padding: 10px;
+        }
+        .cnome{
+            background-color: rgba(0, 0, 255, 0.264);
+        }
+        col.cgroup{
+            background-color: rgb(255, 255, 147);
+        }
+        div#container{
+            overflow-x: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabela</h1>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="cgroup" span="2">
+                <col class="cprof">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Profissao</th>
+                </tr>
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Jorge</td>
+                    <td>M</td>
+                    <td>25</td>
+                    <td>Empresario</td>
+                </tr>
+                <tr>
+                    <td>Marcia</td>
+                    <td>M</td>
+                    <td>25</td>
+                    <td>Empresaria</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>
+    
+</body>
+</html>
